@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		38469E8019F0563200C0C4CE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38469E7F19F0563200C0C4CE /* CoreData.framework */; };
+		38D6309119D4AC45007F1263 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D6309019D4AC45007F1263 /* Foundation.framework */; };
+		38D6309319D4AC45007F1263 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D6309219D4AC45007F1263 /* CoreGraphics.framework */; };
+		38D6309519D4AC45007F1263 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D6309419D4AC45007F1263 /* UIKit.framework */; };
+		38D6309B19D4AC45007F1263 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 38D6309919D4AC45007F1263 /* InfoPlist.strings */; };
+		38D6309D19D4AC46007F1263 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D6309C19D4AC46007F1263 /* main.m */; };
+		38D630A119D4AC46007F1263 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D630A019D4AC46007F1263 /* AppDelegate.m */; };
+		38D630AC19D4AC46007F1263 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38D630AB19D4AC46007F1263 /* Images.xcassets */; };
+		38D630B319D4AC46007F1263 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D630B219D4AC46007F1263 /* XCTest.framework */; };
+		38D630B419D4AC46007F1263 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D6309019D4AC45007F1263 /* Foundation.framework */; };
+		38D630B519D4AC46007F1263 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D6309419D4AC45007F1263 /* UIKit.framework */; };
+		38D630BD19D4AC46007F1263 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 38D630BB19D4AC46007F1263 /* InfoPlist.strings */; };
+		38D630BF19D4AC46007F1263 /* TravelAgenciesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D630BE19D4AC46007F1263 /* TravelAgenciesTests.m */; };
+		38D8D33619D9CF3100C547F3 /* default_icon-57.png in Resources */ = {isa = PBXBuildFile; fileRef = 38D8D33419D9CF3100C547F3 /* default_icon-57.png */; };
+		38D8D33719D9CF3100C547F3 /* default_icon-57@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38D8D33519D9CF3100C547F3 /* default_icon-57@2x.png */; };
+		38DE94AC19D6114A000EAE8A /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 38DE94AB19D6114A000EAE8A /* Settings.bundle */; };
+		38DE94C219D61159000EAE8A /* CreateAgencyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38DE94AE19D61159000EAE8A /* CreateAgencyViewController.m */; };
+		38DE94C319D61159000EAE8A /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38DE94B019D61159000EAE8A /* DetailViewController.m */; };
+		38DE94C419D61159000EAE8A /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38DE94B219D61159000EAE8A /* ListViewController.m */; };
+		38DE94C519D61159000EAE8A /* MAFLogonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 38DE94B519D61159000EAE8A /* MAFLogonHandler.m */; };
+		38DE94C619D61159000EAE8A /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38DE94B719D61159000EAE8A /* MainMenuViewController.m */; };
+		38DE94C719D61159000EAE8A /* TravelAgencyDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38DE94B919D61159000EAE8A /* TravelAgencyDataController.m */; };
+		38DE94C819D61159000EAE8A /* ActivityIndicatorUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 38DE94BC19D61159000EAE8A /* ActivityIndicatorUtility.m */; };
+		38DE94C919D61159000EAE8A /* SettingsUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 38DE94BF19D61159000EAE8A /* SettingsUtilities.m */; };
+		38DE94CA19D61159000EAE8A /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 38DE94C119D61159000EAE8A /* Utilities.m */; };
+		38DE951919D612CD000EAE8A /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 38DE951819D612CD000EAE8A /* libc++.dylib */; };
+		38DE951B19D612D7000EAE8A /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 38DE951A19D612D7000EAE8A /* libstdc++.6.0.9.dylib */; };
+		38DE951D19D612E5000EAE8A /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 38DE951C19D612E5000EAE8A /* libstdc++.dylib */; };
+		38DE952119D612FA000EAE8A /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38DE952019D612FA000EAE8A /* MessageUI.framework */; };
+		38DE952319D61302000EAE8A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38DE952219D61302000EAE8A /* MobileCoreServices.framework */; };
+		38DE952B19D61329000EAE8A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 38DE952A19D61329000EAE8A /* libz.dylib */; };
+		38DE952E19D615BE000EAE8A /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38DE952C19D615BE000EAE8A /* Main_iPhone.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		38D630B619D4AC46007F1263 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38D6308519D4AC45007F1263 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 38D6308C19D4AC45007F1263;
+			remoteInfo = TravelAgencies;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		38469E7F19F0563200C0C4CE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		38D6308D19D4AC45007F1263 /* TravelAgencies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelAgencies.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		38D6309019D4AC45007F1263 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		38D6309219D4AC45007F1263 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		38D6309419D4AC45007F1263 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		38D6309819D4AC45007F1263 /* TravelAgencies-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TravelAgencies-Info.plist"; sourceTree = "<group>"; };
+		38D6309A19D4AC45007F1263 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		38D6309C19D4AC46007F1263 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		38D6309E19D4AC46007F1263 /* TravelAgencies-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TravelAgencies-Prefix.pch"; sourceTree = "<group>"; };
+		38D6309F19D4AC46007F1263 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		38D630A019D4AC46007F1263 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		38D630AB19D4AC46007F1263 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		38D630B119D4AC46007F1263 /* TravelAgenciesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelAgenciesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		38D630B219D4AC46007F1263 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		38D630BA19D4AC46007F1263 /* TravelAgenciesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TravelAgenciesTests-Info.plist"; sourceTree = "<group>"; };
+		38D630BC19D4AC46007F1263 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		38D630BE19D4AC46007F1263 /* TravelAgenciesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TravelAgenciesTests.m; sourceTree = "<group>"; };
+		38D8D33419D9CF3100C547F3 /* default_icon-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default_icon-57.png"; sourceTree = "<group>"; };
+		38D8D33519D9CF3100C547F3 /* default_icon-57@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default_icon-57@2x.png"; sourceTree = "<group>"; };
+		38DE94AB19D6114A000EAE8A /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		38DE94AD19D61159000EAE8A /* CreateAgencyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreateAgencyViewController.h; path = TravelAgencies/CreateAgencyViewController.h; sourceTree = "<group>"; };
+		38DE94AE19D61159000EAE8A /* CreateAgencyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CreateAgencyViewController.m; path = TravelAgencies/CreateAgencyViewController.m; sourceTree = "<group>"; };
+		38DE94AF19D61159000EAE8A /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = TravelAgencies/DetailViewController.h; sourceTree = "<group>"; };
+		38DE94B019D61159000EAE8A /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = TravelAgencies/DetailViewController.m; sourceTree = "<group>"; };
+		38DE94B119D61159000EAE8A /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListViewController.h; path = TravelAgencies/ListViewController.h; sourceTree = "<group>"; };
+		38DE94B219D61159000EAE8A /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListViewController.m; path = TravelAgencies/ListViewController.m; sourceTree = "<group>"; };
+		38DE94B419D61159000EAE8A /* MAFLogonHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAFLogonHandler.h; sourceTree = "<group>"; };
+		38DE94B519D61159000EAE8A /* MAFLogonHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAFLogonHandler.m; sourceTree = "<group>"; };
+		38DE94B619D61159000EAE8A /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainMenuViewController.h; path = TravelAgencies/MainMenuViewController.h; sourceTree = "<group>"; };
+		38DE94B719D61159000EAE8A /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainMenuViewController.m; path = TravelAgencies/MainMenuViewController.m; sourceTree = "<group>"; };
+		38DE94B819D61159000EAE8A /* TravelAgencyDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TravelAgencyDataController.h; path = TravelAgencies/TravelAgencyDataController.h; sourceTree = "<group>"; };
+		38DE94B919D61159000EAE8A /* TravelAgencyDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TravelAgencyDataController.m; path = TravelAgencies/TravelAgencyDataController.m; sourceTree = "<group>"; };
+		38DE94BB19D61159000EAE8A /* ActivityIndicatorUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityIndicatorUtility.h; sourceTree = "<group>"; };
+		38DE94BC19D61159000EAE8A /* ActivityIndicatorUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityIndicatorUtility.m; sourceTree = "<group>"; };
+		38DE94BD19D61159000EAE8A /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		38DE94BE19D61159000EAE8A /* SettingsUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsUtilities.h; sourceTree = "<group>"; };
+		38DE94BF19D61159000EAE8A /* SettingsUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsUtilities.m; sourceTree = "<group>"; };
+		38DE94C019D61159000EAE8A /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		38DE94C119D61159000EAE8A /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
+		38DE951819D612CD000EAE8A /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		38DE951A19D612D7000EAE8A /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
+		38DE951C19D612E5000EAE8A /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		38DE952019D612FA000EAE8A /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		38DE952219D61302000EAE8A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		38DE952A19D61329000EAE8A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		38DE952D19D615BE000EAE8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = TravelAgencies/Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		38D6308A19D4AC45007F1263 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38469E8019F0563200C0C4CE /* CoreData.framework in Frameworks */,
+				38DE952B19D61329000EAE8A /* libz.dylib in Frameworks */,
+				38DE952319D61302000EAE8A /* MobileCoreServices.framework in Frameworks */,
+				38DE952119D612FA000EAE8A /* MessageUI.framework in Frameworks */,
+				38DE951D19D612E5000EAE8A /* libstdc++.dylib in Frameworks */,
+				38DE951B19D612D7000EAE8A /* libstdc++.6.0.9.dylib in Frameworks */,
+				38DE951919D612CD000EAE8A /* libc++.dylib in Frameworks */,
+				38D6309319D4AC45007F1263 /* CoreGraphics.framework in Frameworks */,
+				38D6309519D4AC45007F1263 /* UIKit.framework in Frameworks */,
+				38D6309119D4AC45007F1263 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38D630AE19D4AC46007F1263 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38D630B319D4AC46007F1263 /* XCTest.framework in Frameworks */,
+				38D630B519D4AC46007F1263 /* UIKit.framework in Frameworks */,
+				38D630B419D4AC46007F1263 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		38D6308419D4AC45007F1263 = {
+			isa = PBXGroup;
+			children = (
+				38D8D33419D9CF3100C547F3 /* default_icon-57.png */,
+				38D8D33519D9CF3100C547F3 /* default_icon-57@2x.png */,
+				38DE952C19D615BE000EAE8A /* Main_iPhone.storyboard */,
+				38DE94AD19D61159000EAE8A /* CreateAgencyViewController.h */,
+				38DE94AE19D61159000EAE8A /* CreateAgencyViewController.m */,
+				38DE94AF19D61159000EAE8A /* DetailViewController.h */,
+				38DE94B019D61159000EAE8A /* DetailViewController.m */,
+				38DE94B119D61159000EAE8A /* ListViewController.h */,
+				38DE94B219D61159000EAE8A /* ListViewController.m */,
+				38DE94B319D61159000EAE8A /* MAFLogon */,
+				38DE94B619D61159000EAE8A /* MainMenuViewController.h */,
+				38DE94B719D61159000EAE8A /* MainMenuViewController.m */,
+				38DE94B819D61159000EAE8A /* TravelAgencyDataController.h */,
+				38DE94B919D61159000EAE8A /* TravelAgencyDataController.m */,
+				38DE94BA19D61159000EAE8A /* Utilities */,
+				38DE94AB19D6114A000EAE8A /* Settings.bundle */,
+				38D6309619D4AC45007F1263 /* TravelAgencies */,
+				38D630B819D4AC46007F1263 /* TravelAgenciesTests */,
+				38D6308F19D4AC45007F1263 /* Frameworks */,
+				38D6308E19D4AC45007F1263 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		38D6308E19D4AC45007F1263 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				38D6308D19D4AC45007F1263 /* TravelAgencies.app */,
+				38D630B119D4AC46007F1263 /* TravelAgenciesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		38D6308F19D4AC45007F1263 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				38469E7F19F0563200C0C4CE /* CoreData.framework */,
+				38DE952A19D61329000EAE8A /* libz.dylib */,
+				38DE952219D61302000EAE8A /* MobileCoreServices.framework */,
+				38DE952019D612FA000EAE8A /* MessageUI.framework */,
+				38DE951C19D612E5000EAE8A /* libstdc++.dylib */,
+				38DE951A19D612D7000EAE8A /* libstdc++.6.0.9.dylib */,
+				38DE951819D612CD000EAE8A /* libc++.dylib */,
+				38D6309019D4AC45007F1263 /* Foundation.framework */,
+				38D6309219D4AC45007F1263 /* CoreGraphics.framework */,
+				38D6309419D4AC45007F1263 /* UIKit.framework */,
+				38D630B219D4AC46007F1263 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		38D6309619D4AC45007F1263 /* TravelAgencies */ = {
+			isa = PBXGroup;
+			children = (
+				38D6309F19D4AC46007F1263 /* AppDelegate.h */,
+				38D630A019D4AC46007F1263 /* AppDelegate.m */,
+				38D630AB19D4AC46007F1263 /* Images.xcassets */,
+				38D6309719D4AC45007F1263 /* Supporting Files */,
+			);
+			path = TravelAgencies;
+			sourceTree = "<group>";
+		};
+		38D6309719D4AC45007F1263 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				38D6309819D4AC45007F1263 /* TravelAgencies-Info.plist */,
+				38D6309919D4AC45007F1263 /* InfoPlist.strings */,
+				38D6309C19D4AC46007F1263 /* main.m */,
+				38D6309E19D4AC46007F1263 /* TravelAgencies-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		38D630B819D4AC46007F1263 /* TravelAgenciesTests */ = {
+			isa = PBXGroup;
+			children = (
+				38D630BE19D4AC46007F1263 /* TravelAgenciesTests.m */,
+				38D630B919D4AC46007F1263 /* Supporting Files */,
+			);
+			path = TravelAgenciesTests;
+			sourceTree = "<group>";
+		};
+		38D630B919D4AC46007F1263 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				38D630BA19D4AC46007F1263 /* TravelAgenciesTests-Info.plist */,
+				38D630BB19D4AC46007F1263 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		38DE94B319D61159000EAE8A /* MAFLogon */ = {
+			isa = PBXGroup;
+			children = (
+				38DE94B419D61159000EAE8A /* MAFLogonHandler.h */,
+				38DE94B519D61159000EAE8A /* MAFLogonHandler.m */,
+			);
+			name = MAFLogon;
+			path = TravelAgencies/MAFLogon;
+			sourceTree = "<group>";
+		};
+		38DE94BA19D61159000EAE8A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				38DE94BB19D61159000EAE8A /* ActivityIndicatorUtility.h */,
+				38DE94BC19D61159000EAE8A /* ActivityIndicatorUtility.m */,
+				38DE94BD19D61159000EAE8A /* Constants.h */,
+				38DE94BE19D61159000EAE8A /* SettingsUtilities.h */,
+				38DE94BF19D61159000EAE8A /* SettingsUtilities.m */,
+				38DE94C019D61159000EAE8A /* Utilities.h */,
+				38DE94C119D61159000EAE8A /* Utilities.m */,
+			);
+			name = Utilities;
+			path = TravelAgencies/Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		38D6308C19D4AC45007F1263 /* TravelAgencies */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38D630C219D4AC46007F1263 /* Build configuration list for PBXNativeTarget "TravelAgencies" */;
+			buildPhases = (
+				38D6308919D4AC45007F1263 /* Sources */,
+				38D6308A19D4AC45007F1263 /* Frameworks */,
+				38D6308B19D4AC45007F1263 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TravelAgencies;
+			productName = TravelAgencies;
+			productReference = 38D6308D19D4AC45007F1263 /* TravelAgencies.app */;
+			productType = "com.apple.product-type.application";
+		};
+		38D630B019D4AC46007F1263 /* TravelAgenciesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38D630C519D4AC46007F1263 /* Build configuration list for PBXNativeTarget "TravelAgenciesTests" */;
+			buildPhases = (
+				38D630AD19D4AC46007F1263 /* Sources */,
+				38D630AE19D4AC46007F1263 /* Frameworks */,
+				38D630AF19D4AC46007F1263 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				38D630B719D4AC46007F1263 /* PBXTargetDependency */,
+			);
+			name = TravelAgenciesTests;
+			productName = TravelAgenciesTests;
+			productReference = 38D630B119D4AC46007F1263 /* TravelAgenciesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		38D6308519D4AC45007F1263 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = sap;
+				TargetAttributes = {
+					38D630B019D4AC46007F1263 = {
+						TestTargetID = 38D6308C19D4AC45007F1263;
+					};
+				};
+			};
+			buildConfigurationList = 38D6308819D4AC45007F1263 /* Build configuration list for PBXProject "TravelAgencies" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 38D6308419D4AC45007F1263;
+			productRefGroup = 38D6308E19D4AC45007F1263 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				38D6308C19D4AC45007F1263 /* TravelAgencies */,
+				38D630B019D4AC46007F1263 /* TravelAgenciesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		38D6308B19D4AC45007F1263 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38DE952E19D615BE000EAE8A /* Main_iPhone.storyboard in Resources */,
+				38D8D33619D9CF3100C547F3 /* default_icon-57.png in Resources */,
+				38D630AC19D4AC46007F1263 /* Images.xcassets in Resources */,
+				38D8D33719D9CF3100C547F3 /* default_icon-57@2x.png in Resources */,
+				38DE94AC19D6114A000EAE8A /* Settings.bundle in Resources */,
+				38D6309B19D4AC45007F1263 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38D630AF19D4AC46007F1263 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38D630BD19D4AC46007F1263 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		38D6308919D4AC45007F1263 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38DE94C819D61159000EAE8A /* ActivityIndicatorUtility.m in Sources */,
+				38DE94C419D61159000EAE8A /* ListViewController.m in Sources */,
+				38D630A119D4AC46007F1263 /* AppDelegate.m in Sources */,
+				38DE94C719D61159000EAE8A /* TravelAgencyDataController.m in Sources */,
+				38DE94C219D61159000EAE8A /* CreateAgencyViewController.m in Sources */,
+				38DE94C919D61159000EAE8A /* SettingsUtilities.m in Sources */,
+				38DE94CA19D61159000EAE8A /* Utilities.m in Sources */,
+				38DE94C519D61159000EAE8A /* MAFLogonHandler.m in Sources */,
+				38D6309D19D4AC46007F1263 /* main.m in Sources */,
+				38DE94C319D61159000EAE8A /* DetailViewController.m in Sources */,
+				38DE94C619D61159000EAE8A /* MainMenuViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38D630AD19D4AC46007F1263 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38D630BF19D4AC46007F1263 /* TravelAgenciesTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		38D630B719D4AC46007F1263 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 38D6308C19D4AC45007F1263 /* TravelAgencies */;
+			targetProxy = 38D630B619D4AC46007F1263 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		38D6309919D4AC45007F1263 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38D6309A19D4AC45007F1263 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		38D630BB19D4AC46007F1263 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38D630BC19D4AC46007F1263 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		38DE952C19D615BE000EAE8A /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38DE952D19D615BE000EAE8A /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		38D630C019D4AC46007F1263 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		38D630C119D4AC46007F1263 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		38D630C319D4AC46007F1263 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TravelAgencies/TravelAgencies-Prefix.pch";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "TravelAgencies/TravelAgencies-Info.plist";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		38D630C419D4AC46007F1263 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TravelAgencies/TravelAgencies-Prefix.pch";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "TravelAgencies/TravelAgencies-Info.plist";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		38D630C619D4AC46007F1263 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TravelAgencies.app/TravelAgencies";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TravelAgencies/TravelAgencies-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TravelAgenciesTests/TravelAgenciesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		38D630C719D4AC46007F1263 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TravelAgencies.app/TravelAgencies";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TravelAgencies/TravelAgencies-Prefix.pch";
+				INFOPLIST_FILE = "TravelAgenciesTests/TravelAgenciesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		38D6308819D4AC45007F1263 /* Build configuration list for PBXProject "TravelAgencies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38D630C019D4AC46007F1263 /* Debug */,
+				38D630C119D4AC46007F1263 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38D630C219D4AC46007F1263 /* Build configuration list for PBXNativeTarget "TravelAgencies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38D630C319D4AC46007F1263 /* Debug */,
+				38D630C419D4AC46007F1263 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38D630C519D4AC46007F1263 /* Build configuration list for PBXNativeTarget "TravelAgenciesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38D630C619D4AC46007F1263 /* Debug */,
+				38D630C719D4AC46007F1263 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 38D6308519D4AC45007F1263 /* Project object */;
+}
